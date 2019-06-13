@@ -62,15 +62,23 @@ created a file Text.txt in branch1
         text2.txt        | 1 +
         3 files changed, 5 insertions(+), 1 deletion(-)*
 
-* push- *git pull* - pull update from github to local Repository
+* pull- *git pull* - pull update from github to local Repository
     *$ git pull
     remote: Enumerating objects: 12, done.
     remote: Counting objects: 100% (12/12), done.
     remote: Compressing objects: 100% (10/10), done.*
 
 * add remote- *git remote add <url>* - it gives you remote repos in ur local.
+          *$ git push --set-upstream origin Branch1
+            Enumerating objects: 8, done.
+            Counting objects: 100% (8/8), done.
+            Delta compression using up to 4 threads*
 
 * status- *git status* - Give status of files and directory
+          *$ git status
+            On branch Branch1
+            Your branch is up to date with 'origin/Branch1'.
+            nothing to commit, working tree clean*
 
 * Log- *git log* - this cmd displays made changes by author with name,date and message
 
@@ -93,10 +101,10 @@ created a file Text.txt in branch1
           *git tag
           $ git tag
           Tag1
-          v1.4
+          v1.4*
 
 
-* fetch - *git fetch --all*  
+* fetch - It download all directory or tags of any Repository from github to our local git.
+          *git fetch --all*  
           *git fetch --tags*
           *git fetch <url>*
-          It download all directory or tags of any Repository from github to our local git.
